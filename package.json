@@ -1,15 +1,36 @@
 {
-  "name": "kazimierz",
-  "version": "1.0.0",
-  "repository": "git@github.com:Atulin/kazimierz.git",
-  "author": "Atulin",
-  "private": true,
-  "source": "src/index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
-  },
-  "devDependencies": {
-    "parcel": "^2.4.1"
-  }
+    "name": "kazimierz",
+    "version": "1.0.0",
+    "repository": "git@github.com:Atulin/kazimierz.git",
+    "author": "Atulin",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
+        "build": "gulp all"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "3.4.0",
+        "autoprefixer": "10.4.4",
+        "concurrently": "7.0.0",
+        "csso": "5.0.3",
+        "dayjs": "1.11.0",
+        "fs-extra": "10.0.1",
+        "gulp": "4.0.2",
+        "gulp-exec": "5.0.0",
+        "gulp-postcss": "9.0.1",
+        "gulp-rename": "2.0.0",
+        "gulp-sass": "5.1.0",
+        "gulp-sourcemaps": "3.0.0",
+        "gulp-terser": "2.1.0",
+        "gulp-typescript": "6.0.0-alpha.1",
+        "gulp-webp": "4.0.1",
+        "handlebars": "4.7.7",
+        "live-server": "1.2.1",
+        "postcss": "8.4.12",
+        "postcss-csso": "6.0.0",
+        "sass": "1.49.9",
+        "toml": "3.0.0",
+        "typescript": "4.6.2"
+    },
+    "dependencies": {}
 }
