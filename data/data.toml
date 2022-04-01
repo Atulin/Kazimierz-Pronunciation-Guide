@@ -1,1 +1,73 @@
-title = "Kazimierz"
+title = "Kazimierz — a pronunciation guide"
+desc = """
+Kazimierz in Arknights is based on Poland and various events and characters use Polish words.
+Some of them can be hard to figure out the pronunciation of, so here's a guide from a native speaker.
+"""
+
+# PLACES
+[[words]]
+word = "Kazimierz"
+sound = "Kah-zhee-myesh"
+type = "place"
+
+[[words]]
+word = "Kawalerielki"
+sound = "Kav-val-ehr-yel-ki"
+type = "place"
+
+# GROUPS
+[[words]]
+word = "Sprawiedliwi"
+sound = "Sprah-vye-dlee-vee"
+type = "group"
+
+[[words]]
+word = "Słoma"
+sound = "Swo-mah"
+type = "group"
+
+# PEOPLE
+[[words]]
+word = "Kowal"
+sound = "Koh-val"
+type = "character"
+
+[[words]]
+word = "Maciej"
+sound = "Mah-tsiey"
+type = "character"
+
+[[words]]
+word = "Maria"
+sound = "Mar-yah"
+type = "character"
+
+[[words]]
+word = "Czarny"
+sound = "Char-nyh"
+type = "character"
+
+[[words]]
+word = "Młynar"
+sound = "Mwe-narh"
+type = "character"
+
+[[words]]
+word = "Justyna"
+sound = "Yus-tyh-nah"
+type = "character"
+
+[[words]]
+word = "Szewczyk"
+sound = "Shev-chyck"
+type = "character"
+
+[[words]]
+word = "Gałązka"
+sound = "Gah–won–ska"
+type = "character"
+
+[[words]]
+word = "Malkiewicz"
+sound = "Mal-kyeh-vich"
+type = "character"

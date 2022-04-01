@@ -5,14 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/style.css">
     <title>{{title}}</title>
 </head>
 <body>
+
 <h1>{{title}}</h1>
+
+<div id="description">
+    {{desc}}
+</div>
+
+<main>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Word</th>
+            <th>Pronunciation</th>
+        </tr>
+        {{#each words }}
+            <tr class="{{this.type}}">
+                <td class="cat">{{this.type}}</td>
+                <td class="word">{{this.word}}</td>
+                <td class="sound">{{this.sound}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</main>
 
 <footer class="footer">
     <div class="bottom">
-        <span class="copy-text">&copy;2019-{{year}}</span><a class="copy-link" href="/">Genfic</a>
+        <span class="copy-text">&copy;2022-{{year}}</span>
     </div>
 </footer>
 
