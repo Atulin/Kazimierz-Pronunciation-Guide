@@ -65,7 +65,7 @@ exports.img = img;
 
 // Handlebars
 const hbs = () => pipeline(gulp.src('./src/**/*.hbs'),
-    exec('node build.js', {
+    exec('node build.mjs', {
         continueOnError: false,
         pipeStdout: false,
     }),

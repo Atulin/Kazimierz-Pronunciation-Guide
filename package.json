@@ -1,7 +1,6 @@
 {
     "name": "kazimierz",
     "version": "1.0.0",
-    "repository": "git@github.com:Atulin/kazimierz.git",
     "author": "Atulin",
     "private": true,
     "scripts": {
