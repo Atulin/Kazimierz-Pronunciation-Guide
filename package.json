@@ -1,0 +1,15 @@
+{
+  "name": "kazimierz",
+  "version": "1.0.0",
+  "repository": "git@github.com:Atulin/kazimierz.git",
+  "author": "Atulin",
+  "private": true,
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}
