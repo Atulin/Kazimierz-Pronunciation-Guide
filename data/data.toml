@@ -26,6 +26,11 @@ word = "Słoma"
 sound = "Swo-mah"
 type = "group"
 
+[[words]]
+word = "Mieszko"
+sound = "Miesh-co"
+type = "group"
+
 # PEOPLE
 [[words]]
 word = "Kowal"
@@ -69,5 +74,16 @@ type = "character"
 
 [[words]]
 word = "Malkiewicz"
-sound = "Mal-kyeh-vich"
+sound = "Mal-kye-vich"
 type = "character"
+
+[[words]]
+word = "Tytus Topola"
+sound = "Tyh-toos Toh-poh-lah"
+type = "character"
+
+# OTHERS
+[[words]]
+word = "Ułan"
+sound = "Uh–wan"
+type = "other"
