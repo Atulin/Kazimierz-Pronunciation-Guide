@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added the first bunch of words and styled everything nicely">
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Better styling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.toml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,8 @@
       <updated>1648792243956</updated>
       <workItem from="1648792248253" duration="2234000" />
       <workItem from="1648853268960" duration="2827000" />
-      <workItem from="1648857412908" duration="1576000" />
+      <workItem from="1648857412908" duration="1617000" />
+      <workItem from="1649138119762" duration="512000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -113,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648856071252</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added &quot;Tytus Topola&quot;, &quot;Mieszko&quot; and &quot;Ułan&quot;">
+      <created>1648859346521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648859346521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +144,8 @@
     <MESSAGE value="Homemade solutions are the best after all" />
     <MESSAGE value="Better Build Bsystem" />
     <MESSAGE value="Added the first bunch of words and styled everything nicely" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the first bunch of words and styled everything nicely" />
+    <MESSAGE value="Added &quot;Tytus Topola&quot;, &quot;Mieszko&quot; and &quot;Ułan&quot;" />
+    <MESSAGE value="Better styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better styling" />
   </component>
 </project>

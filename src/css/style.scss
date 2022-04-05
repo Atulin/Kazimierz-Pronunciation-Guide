@@ -22,20 +22,18 @@ $bg: #151015;
   --fg-25: #{rgba($fg, .25)};
   --fg-10: #{rgba($fg, .1)};
   --bg: #{$bg};
+  --body-bg: #{lighten($bg, 10%)}
 }
 
 body {
   min-height: 100vh;
-  max-width: 600px;
-  background-color: var(--bg);
+  width: 100vw;
+  background-color: var(--body-bg);
   color: var(--fg);
   font-family: "Raleway Var", sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  margin: auto;
 }
 
 #description {
@@ -43,9 +41,18 @@ body {
 }
 
 main {
-  flex: 1;
+  min-height: 100vh;
+  max-width: 600px;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: auto;
 
   table {
+    flex: 1;
     border-collapse: collapse;
     tr {
 
