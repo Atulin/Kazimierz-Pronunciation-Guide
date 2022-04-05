@@ -33,6 +33,11 @@ type = "group"
 
 # PEOPLE
 [[words]]
+word = "Zofia"
+sound = "Zoh-fya"
+type = "character"
+
+[[words]]
 word = "Kowal"
 sound = "Koh-val"
 type = "character"
