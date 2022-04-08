@@ -14,6 +14,10 @@ document
         dialog.showModal();
     })
 
+dialog
+    .querySelector('button#close')
+    .addEventListener('click', () => dialog.close());
+
 // https://gist.github.com/jbmoelker/226594f195b97bf61436
 interface HTMLDialogElement extends HTMLElement {
     open: boolean;

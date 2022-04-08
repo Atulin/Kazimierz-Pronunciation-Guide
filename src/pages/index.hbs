@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{desc}}">
     <link rel="stylesheet" href="{{ bust '/css/style.css' }}">
     <title>{{title}}</title>
 </head>
@@ -31,7 +32,7 @@
                 <td class="sound">{{this.sound}}</td>
                 {{#if ../flags.voice}}
                     <td class="voice">
-                        <button data-voice="{{normalize this.word}}">
+                        <button data-voice="{{normalize this.word}}" name="Play pronunciation of {{this.word}}">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -58,6 +59,10 @@
 </audio>
 
 <dialog id="info">
+    <button id="close">
+        <svg fill="none" stroke="var(--fg)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+    </button>
+
     <div class="changelog">
         <span class="title">Changelog</span>
         {{#each changelog}}
@@ -78,7 +83,7 @@
     </a>
 </dialog>
 
-<button id="info-button">
+<button id="info-button" name="Show information about this site">
     <svg fill="none" stroke="var(--fg)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>

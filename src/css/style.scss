@@ -151,6 +151,20 @@ dialog#info {
   background-color: var(--body-bg);
   color: var(--fg);
 
+  button#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover {
+      svg {
+        stroke: var(--fg-50);
+      }
+    }
+    svg {
+      height: 24px;
+    }
+  }
+
   .changelog {
     display: flex;
     flex-direction: column;
