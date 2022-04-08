@@ -4,11 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added voice recordings and all the functionality around playing them, added favicon and all that shebang, added changelog and link to the Github repo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/info.ts" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added a close button to the changelog dialog to make it better on mobile, and increased a11y of buttons">
+      <change afterPath="$PROJECT_DIR$/127.0.0.1_2022-04-08_10-31-27.report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/127.0.0.1_2022-04-08_10-33-42.report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/android-chrome-512x512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/apple-touch-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/fonts/Raleway-Italic-VF.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/fonts/Raleway-Italic-VF.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/fonts/Raleway-VF.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/fonts/Raleway-VF.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/czarny.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/czarny.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/gałązka.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/gałązka.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/justyna.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/justyna.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/kawalerielki.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/kawalerielki.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/kazimierz.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/kazimierz.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/kowal.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/kowal.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/maciej.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/maciej.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/malkiewicz.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/malkiewicz.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/maria.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/maria.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/mieszko.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/mieszko.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/młynar.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/młynar.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/sprawiedliwi.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/sprawiedliwi.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/szewczyk.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/szewczyk.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/słoma.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/słoma.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/tytus_topola.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/tytus_topola.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/ułan.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/ułan.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wwwroot/sounds/zofia.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/src/wwwroot/sounds/zofia.mp3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +68,6 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="17.0.1" />
@@ -57,7 +81,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
-    <property name="ts.external.directory.path" value="G:\WebstormProjects\Kazimierz\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="G:\JetBrains\apps\WebStorm\ch-0\213.7172.31\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -66,7 +90,17 @@
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot\fonts" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.audit">
+    <configuration name="audit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="audit" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,6 +116,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.audit" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +135,8 @@
       <workItem from="1649139112082" duration="128000" />
       <workItem from="1649298481307" duration="100000" />
       <workItem from="1649395071815" duration="8708000" />
-      <workItem from="1649405255960" duration="373000" />
+      <workItem from="1649405255960" duration="431000" />
+      <workItem from="1649406449405" duration="800000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -158,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649405040191</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added a close button to the changelog dialog to make it better on mobile, and increased a11y of buttons">
+      <created>1649405684068</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649405684068</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +228,7 @@
     <MESSAGE value="Added &quot;Zofia&quot;" />
     <MESSAGE value="Fixed &quot;kawalerielki&quot; pronunciation" />
     <MESSAGE value="Added voice recordings and all the functionality around playing them, added favicon and all that shebang, added changelog and link to the Github repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added voice recordings and all the functionality around playing them, added favicon and all that shebang, added changelog and link to the Github repo" />
+    <MESSAGE value="Added a close button to the changelog dialog to make it better on mobile, and increased a11y of buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a close button to the changelog dialog to make it better on mobile, and increased a11y of buttons" />
   </component>
 </project>

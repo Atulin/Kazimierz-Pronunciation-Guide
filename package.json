@@ -1,11 +1,12 @@
 {
     "name": "kazimierz",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "author": "Atulin",
     "private": true,
     "scripts": {
         "dev": "concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
-        "build": "gulp all"
+        "build": "gulp all",
+        "audit": "lighthouse http://127.0.0.1:8080/ --view"
     },
     "devDependencies": {
         "@cloudflare/workers-types": "3.4.0",
@@ -24,6 +25,7 @@
         "gulp-typescript": "6.0.0-alpha.1",
         "gulp-webp": "4.0.1",
         "handlebars": "4.7.7",
+        "lighthouse": "^9.5.0",
         "live-server": "1.2.1",
         "postcss": "8.4.12",
         "postcss-csso": "6.0.0",

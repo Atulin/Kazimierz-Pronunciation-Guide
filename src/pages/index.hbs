@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="{{desc}}">
     <link rel="stylesheet" href="{{ bust '/css/style.css' }}">
@@ -32,7 +32,9 @@
                 <td class="sound">{{this.sound}}</td>
                 {{#if ../flags.voice}}
                     <td class="voice">
-                        <button data-voice="{{normalize this.word}}" name="Play pronunciation of {{this.word}}">
+                        <button data-voice="{{normalize this.word}}"
+                                aria-label="Play pronunciation of {{this.word}}"
+                                title="Play pronunciation of {{this.word}}">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,7 +61,7 @@
 </audio>
 
 <dialog id="info">
-    <button id="close">
+    <button id="close" aria-label="Close" title="Close">
         <svg fill="none" stroke="var(--fg)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
     </button>
 
@@ -83,7 +85,9 @@
     </a>
 </dialog>
 
-<button id="info-button" name="Show information about this site">
+<button id="info-button"
+        aria-label="Show information about this site"
+        title="Show information about this site">
     <svg fill="none" stroke="var(--fg)" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
