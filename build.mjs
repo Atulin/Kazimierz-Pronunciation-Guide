@@ -36,8 +36,10 @@ async function loadData(path) {
 
 async function render(filename, data) {
     Handlebars.registerHelper('date', (date, format = null) => dayjs(date.toString().split('(')[0]).format(format));
+    Handlebars.registerHelper('dateISO', date => dayjs(date).toISOString());
     Handlebars.registerHelper('toLower', str => str.toLowerCase());
-    Handlebars.registerHelper('bust', str => `${str}?=${crypto.randomUUID()}`)
+    Handlebars.registerHelper('bust', str => `${str}?=${crypto.randomUUID()}`);
+    Handlebars.registerHelper('normalize', str => str.toLowerCase().replace(/\s+/, '_'));
 
     const source = await fs.readFile(filename, 'utf8');
     const template = Handlebars.compile(source.toString());

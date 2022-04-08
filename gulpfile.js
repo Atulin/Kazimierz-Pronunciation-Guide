@@ -82,7 +82,7 @@ const watchHbs = () => gulp.watch(['./src/**/*.hbs', './data/**/*'], hbs);
 exports.watchHbs = watchHbs;
 
 // All tasks
-const all = gulp.parallel([css,ts, img, hbs]);
+const all = gulp.parallel([css, ts, img, hbs]);
 exports.all = all;
 
 const watchAll = gulp.parallel([watchCss, watchTs, watchHbs, all]);

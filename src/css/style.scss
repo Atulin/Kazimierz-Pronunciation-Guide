@@ -13,6 +13,12 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
 $fg: #efefef;
 $bg: #151015;
 
@@ -22,7 +28,8 @@ $bg: #151015;
   --fg-25: #{rgba($fg, .25)};
   --fg-10: #{rgba($fg, .1)};
   --bg: #{$bg};
-  --body-bg: #{lighten($bg, 10%)}
+  --bg-50: #{rgba($bg, .5)};
+  --body-bg: #{lighten($bg, 10%)};
 }
 
 body {
@@ -55,9 +62,19 @@ main {
     flex: 1;
     border-collapse: collapse;
     tr {
+      border-bottom: 1px solid var(--fg-50);
+
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+          display: none;
+        }
+      }
 
       &:not(:first-child) {
-        border-top: 1px solid var(--fg-50);
+        transition: background-color 100ms ease-in-out;
 
         &:hover {
           background-color: var(--fg-10);
@@ -70,6 +87,7 @@ main {
 
       td {
         padding: .5rem 1rem;
+        vertical-align: middle;
 
         &.cat {
           color: var(--fg-50);
@@ -82,9 +100,112 @@ main {
         &.sound {
           letter-spacing: .2rem;
         }
+        &.voice {
+          display: flex;
+          align-items: center;
+
+          button {
+            height: 24px;
+            &:focus {
+              outline: 2px dotted var(--fg-50);
+            }
+            &:hover {
+              svg {
+                stroke: var(--fg);
+              }
+            }
+
+            svg {
+              height: 100%;
+              stroke: var(--fg-50);
+              transition: stroke 100ms ease-in-out;
+            }
+          }
+        }
       }
     }
   }
+}
+
+audio#player {
+  position: fixed;
+  bottom: .5rem;
+  left: .5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease-in-out;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+dialog#info {
+  margin: auto;
+  border: 0;
+  box-shadow: 2px 2px 10px 2px var(--bg);
+  max-height: 90vh;
+  max-width: 650px;
+  overflow: auto;
+  background-color: var(--body-bg);
+  color: var(--fg);
+
+  .changelog {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    user-select: none; // hack to prevent clicking off the dialog from selecting all text
+    margin: 1rem;
+
+    .title {
+      font-size: 1.2rem;
+    }
+
+    .entry {
+      display: flex;
+      gap: 1rem;
+
+      time {
+        color: var(--fg-50);
+        transition: color 100ms ease-in-out;
+        &:hover {
+          color: var(--fg);
+        }
+      }
+    }
+  }
+
+  .gh {
+    --col: var(--fg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    gap: .5rem;
+    width: 100%;
+    color: var(--col);
+    background-color: rgba($fg, .1);
+    user-select: none; // hack to prevent clicking off the dialog from selecting all text
+
+    &:hover {
+      --col: var(--fg-50);
+    }
+
+    svg {
+      fill: var(--col);
+      height: 1.5rem;
+    }
+  }
+}
+
+button#info-button {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 footer {

@@ -3,6 +3,10 @@ desc = """
 Kazimierz in Arknights is based on Poland and various events and characters use Polish words.
 Some of them can be hard to figure out the pronunciation of, so here's a guide from a native speaker.
 """
+github = "https://github.com/Atulin/Kazimierz-Pronunciation-Guide"
+
+[flags]
+voice = true
 
 # PLACES
 [[words]]
@@ -92,3 +96,7 @@ type = "character"
 word = "Ułan"
 sound = "Uh–wan"
 type = "other"
+
+[[changelog]]
+date = 2022-04-08T09:11:22.532Z
+body = "Recorded some voiceover to make it easier to figure out how to spell the words"
