@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Better styling" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;Zofia&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +91,8 @@
       <workItem from="1648853268960" duration="2827000" />
       <workItem from="1648857412908" duration="1617000" />
       <workItem from="1649138119762" duration="577000" />
+      <workItem from="1649139112082" duration="128000" />
+      <workItem from="1649298481307" duration="100000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -125,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649138678581</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added &quot;Zofia&quot;">
+      <created>1649139267660</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649139267660</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +160,7 @@
     <MESSAGE value="Added the first bunch of words and styled everything nicely" />
     <MESSAGE value="Added &quot;Tytus Topola&quot;, &quot;Mieszko&quot; and &quot;Ułan&quot;" />
     <MESSAGE value="Better styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Better styling" />
+    <MESSAGE value="Added &quot;Zofia&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Zofia&quot;" />
   </component>
 </project>
