@@ -19,7 +19,7 @@
 
     const showDefinition = async (e: Event) => {
         const p = dialog.querySelector('p.definition') as HTMLParagraphElement;
-        p.innerText = (e.currentTarget as HTMLButtonElement).dataset['definition'];
+        p.innerHTML = (e.currentTarget as HTMLButtonElement).dataset['definition'];
 
         const s = dialog.querySelector('span.title') as HTMLSpanElement;
         s.innerText = (e.currentTarget as HTMLButtonElement).dataset['word'];

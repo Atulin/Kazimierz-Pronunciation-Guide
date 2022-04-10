@@ -4,6 +4,7 @@ import Handlebars from "handlebars";
 import toml from "toml";
 import dayjs from "dayjs";
 import crypto from "crypto";
+import { marked } from 'marked';
 
 const ci = console.info;
 
@@ -40,6 +41,7 @@ async function render(filename, data) {
     Handlebars.registerHelper('toLower', str => str.toLowerCase());
     Handlebars.registerHelper('bust', str => `${str}?=${crypto.randomUUID()}`);
     Handlebars.registerHelper('normalize', str => str.toLowerCase().replace(/\s+/, '_'));
+    Handlebars.registerHelper('md', str => marked.parse(str));
 
     const source = await fs.readFile(filename, 'utf8');
     const template = Handlebars.compile(source.toString());

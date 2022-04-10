@@ -24,12 +24,22 @@ $bg: #151015;
 
 :root {
   --fg: #{$fg};
-  --fg-50: #{rgba($fg, .5)};
-  --fg-25: #{rgba($fg, .25)};
-  --fg-10: #{rgba($fg, .1)};
+  --fg-75: #{mix($fg, $bg, 75%)};
+  --fg-50: #{mix($fg, $bg, 50%)};
+  --fg-25: #{mix($fg, $bg, 25%)};
+  --fg-10: #{mix($fg, $bg, 10%)};
   --bg: #{$bg};
-  --bg-50: #{rgba($bg, .5)};
   --body-bg: #{lighten($bg, 10%)};
+}
+
+a {
+  color: saturate($fg, 50%);
+  &:hover {
+    color: var(--fg-75);
+  }
+  &:focus {
+    outline: 2px dotted var(--fg-50);
+  }
 }
 
 body {
@@ -143,6 +153,7 @@ audio#player {
 }
 dialog{
   margin: auto;
+  padding: 2px;
   border: 0;
   box-shadow: 2px 2px 10px 2px var(--bg);
   max-height: 90vh;
@@ -150,6 +161,7 @@ dialog{
   overflow: auto;
   background-color: var(--body-bg);
   color: var(--fg);
+  line-height: 1.5rem;
 
   button#close {
     position: absolute;
@@ -182,9 +194,10 @@ dialog{
 
     .entry {
       display: flex;
-      gap: 1rem;
+      gap: .5rem;
 
       time {
+        font-family: monospace;
         color: var(--fg-50);
         transition: color 100ms ease-in-out;
         &:hover {
@@ -194,13 +207,14 @@ dialog{
     }
   }
 
-  .gh {
+  .link {
     --col: var(--fg);
 
     display: flex;
     align-items: center;
     justify-content: center;
     padding: .5rem;
+    margin-top: 2px;
     gap: .5rem;
     width: 100%;
     color: var(--col);

@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Reached 100/100/100/100 Lighthouse score">
-      <change afterPath="$PROJECT_DIR$/src/js/definitions.ts" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added word definitions">
+      <change afterPath="$PROJECT_DIR$/src/wwwroot/sounds/greynuty.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.toml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/definitions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/definitions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -114,7 +125,8 @@
       <workItem from="1649395071815" duration="8708000" />
       <workItem from="1649405255960" duration="431000" />
       <workItem from="1649406449405" duration="1293000" />
-      <workItem from="1649409319281" duration="2681000" />
+      <workItem from="1649409319281" duration="2748000" />
+      <workItem from="1649604802888" duration="3510000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -186,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649407565369</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added word definitions">
+      <created>1649412055141</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649412055141</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +234,7 @@
     <MESSAGE value="Added voice recordings and all the functionality around playing them, added favicon and all that shebang, added changelog and link to the Github repo" />
     <MESSAGE value="Added a close button to the changelog dialog to make it better on mobile, and increased a11y of buttons" />
     <MESSAGE value="Reached 100/100/100/100 Lighthouse score" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reached 100/100/100/100 Lighthouse score" />
+    <MESSAGE value="Added word definitions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added word definitions" />
   </component>
 </project>

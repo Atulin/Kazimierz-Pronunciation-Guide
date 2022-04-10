@@ -27,6 +27,7 @@
         "handlebars": "4.7.7",
         "lighthouse": "^9.5.0",
         "live-server": "1.2.1",
+        "marked": "^4.0.13",
         "postcss": "8.4.12",
         "postcss-csso": "6.0.0",
         "sass": "1.49.9",
