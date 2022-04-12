@@ -130,6 +130,12 @@ A soldier of Polish light cavalry armed with a lance, a saber, and a firearm.
 [Wikipedia](https://en.wikipedia.org/wiki/Uhlan)
 """
 
+[[words]]
+word = "Liść"
+sound = "¯\\_(ツ)_/¯"
+type = "other"
+definition = "Leaf"
+
 [[changelog]]
 date = 2022-04-08T09:11:22.532Z
 body = "Recorded some voiceover to make it easier to figure out how to spell the words"
