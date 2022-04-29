@@ -85,6 +85,12 @@ type = "character"
 definition = "Female name"
 
 [[words]]
+word = "Iwona"
+sound = "Ee-voh-na"
+type = "character"
+definition = "Female name"
+
+[[words]]
 word = "Szewczyk"
 sound = "Shev-chyck"
 type = "character"
@@ -151,3 +157,7 @@ Added relevant Wikipedia links\n
 Added *Greynuty*\n
 Added Ko-Fi link, because why not ¯\\\\_(ツ)\\_/¯
 """
+
+[[changelog]]
+date = 2022-04-29T03:23:50.811Z
+body = "Added *Iwona*"

@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;Greynuty&quot;, added some Wikipedia links, added Ko-Fi button, fixed #3">
-      <change afterPath="$PROJECT_DIR$/src/partials/info.hbs" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.toml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,20 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "G:\\WebstormProjects\\Kazimierz\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/WebstormProjects/chryssishow&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;G:\\WebstormProjects\\Kazimierz\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot" />
@@ -124,7 +119,12 @@
       <workItem from="1649604802888" duration="3606000" />
       <workItem from="1649749905588" duration="143000" />
       <workItem from="1649750072318" duration="264000" />
-      <workItem from="1649750364536" duration="2994000" />
+      <workItem from="1649750364536" duration="3227000" />
+      <workItem from="1649859131399" duration="115000" />
+      <workItem from="1649859281064" duration="17000" />
+      <workItem from="1650390495704" duration="47000" />
+      <workItem from="1651194843876" duration="127000" />
+      <workItem from="1651195027675" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649608518104</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too.">
+      <created>1649753476699</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649753476699</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +248,7 @@
     <MESSAGE value="Reached 100/100/100/100 Lighthouse score" />
     <MESSAGE value="Added word definitions" />
     <MESSAGE value="Added &quot;Greynuty&quot;, added some Wikipedia links, added Ko-Fi button, fixed #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Greynuty&quot;, added some Wikipedia links, added Ko-Fi button, fixed #3" />
+    <MESSAGE value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
   </component>
 </project>
