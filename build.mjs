@@ -34,34 +34,39 @@ ci('┃└ Saved');
 ci('┗━ All done!');
 
 async function loadData(path) {
-	const text = await fs.readFile(path);
-	const data = toml.parse(text.toString());
-	console.log(data);
-	return {
-		...data,
-		year: new Date().getFullYear(),
-	};
+    const text = await fs.readFile(path);
+    const data = toml.parse(text.toString());
+    return {
+        ...data,
+        year: new Date().getFullYear(),
+    };
 }
 
 function registerHelpers() {
-	Handlebars.registerHelper('date', (date, format = null) => dayjs(date.toString().split('(')[0]).format(format));
-	Handlebars.registerHelper('dateISO', (date) => dayjs(date).toISOString());
-	Handlebars.registerHelper('toLower', (str) => str.toLowerCase());
-	Handlebars.registerHelper('bust', (str) => `${str}?=${crypto.randomUUID()}`);
-	Handlebars.registerHelper('normalize', (str) => str.toLowerCase().replace(/\s+/, '_'));
-	Handlebars.registerHelper('md', (str) => marked.parse(str));
+    const helpers = {
+        date: (date, format = null) => dayjs(date.toString().split('(')[0]).format(format),
+        dateISO: (date) => dayjs(date).toISOString(),
+        toLower: (str) => str.toLowerCase(),
+        bust: (str) => `${str}?=${crypto.randomUUID()}`,
+        normalize: (str) => str.toLowerCase().replace(/\s+/, '_'),
+        md: (str) => marked.parse(str),
+    }
+
+    for (const [key, value] of Object.entries(helpers)) {
+        Handlebars.registerHelper(key, value);
+    }
 }
 
 async function registerPartials() {
-	const partials = await fs.readdir('./src/partials/');
-	for (const p of partials) {
-		const partial = await fs.readFile(`./src/partials/${p}`);
-		Handlebars.registerPartial(path.parse(p).name, partial.toString());
-	}
+    const partials = await fs.readdir('./src/partials/');
+    for (const p of partials) {
+        const partial = await fs.readFile(`./src/partials/${p}`);
+        Handlebars.registerPartial(path.parse(p).name, partial.toString());
+    }
 }
 
 async function render(filename, data) {
-	const source = await fs.readFile(filename, 'utf8');
-	const template = Handlebars.compile(source.toString());
-	return template(data);
+    const source = await fs.readFile(filename, 'utf8');
+    const template = Handlebars.compile(source.toString());
+    return template(data);
 }
