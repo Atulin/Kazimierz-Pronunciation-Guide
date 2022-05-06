@@ -7,7 +7,7 @@ github = "https://github.com/Atulin/Kazimierz-Pronunciation-Guide"
 kofi = "https://ko-fi.com/angius"
 
 # PLACES
-[[words]]
+[[words]] 
 word = "Kazimierz"
 sound = "Kah-zhee-myesh"
 type = "place"
@@ -91,6 +91,16 @@ type = "character"
 definition = "Female name"
 
 [[words]]
+word = "Krukowska"
+sound = "Kroo-kov-ska"
+type = "character"
+definition = """
+*Kruk* means *raven*.
+*-ska* suffix (and its extended form, *-owska*) is the feminine form of *-ski* and indicates a belonging to some land.
+All in all, the surname can be interpreted as *the one from Kruków*, with *Kruków* being a place of birth or residence.
+"""
+
+[[words]]
 word = "Szewczyk"
 sound = "Shev-chyck"
 type = "character"
@@ -161,3 +171,7 @@ Added Ko-Fi link, because why not ¯\\\\_(ツ)\\_/¯
 [[changelog]]
 date = 2022-04-29T03:23:50.811Z
 body = "Added *Iwona*"
+
+[[changelog]]
+date = 2022-05-06T07:49:55Z
+body = "Added *Krukowska*"
