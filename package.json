@@ -4,20 +4,22 @@
     "author": "Atulin",
     "private": true,
     "scripts": {
-        "dev": "concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
+        "dev": "gulp all && concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
         "build": "gulp all",
-        "audit": "lighthouse http://127.0.0.1:8080/ --view"
+        "audit": "lighthouse http://127.0.0.1:8080/ --view",
+        "deno:build": "deno run --allow-read --allow-write --unstable compiler/build.ts"
     },
     "devDependencies": {
         "@mr-hope/gulp-sass": "^3.0.2",
         "@types/marked": "^4.0.3",
-        "@types/node": "^17.0.23",
+        "@types/node": "^17.0.31",
         "autoprefixer": "10.4.4",
         "concurrently": "7.0.0",
         "csso": "5.0.3",
         "dayjs": "1.11.0",
         "fs-extra": "10.0.1",
         "gulp": "4.0.2",
+        "gulp-esbuild": "^0.10.3",
         "gulp-exec": "5.0.0",
         "gulp-postcss": "9.0.1",
         "gulp-rename": "2.0.0",

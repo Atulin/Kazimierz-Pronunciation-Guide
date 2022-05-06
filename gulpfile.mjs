@@ -16,16 +16,14 @@ import csso from 'postcss-csso';
 import webp from 'gulp-webp';
 
 // JS processors
-import terser from 'gulp-terser';
-import typescript from "gulp-typescript";
-const tsProject = typescript.createProject('tsconfig.json');
+import gulpEsbuild from 'gulp-esbuild';
 
 
 // CSS tasks
 export const css = () =>
     pipeline(
         gulp.src('./src/css/*.{sass,scss}'),
-        sourcemaps.init(),
+        sourcemaps.init({}),
         sass(),
         gulp.dest('./dist/css'),
         rename({ suffix: '.min' }),
@@ -33,7 +31,7 @@ export const css = () =>
             autoprefixer,
             csso({ comments: false }),
         ]),
-        sourcemaps.write('./'),
+        sourcemaps.write('./', {}),
         gulp.dest('./dist/css'),
         errorHandler,
     );
@@ -43,12 +41,11 @@ export const watchCss = () => gulp.watch(['./src/css/*.{sass,scss}', './src/css/
 // TS tasks
 export const ts = () =>
     pipeline(gulp.src('./src/js/**/*.ts'),
-        sourcemaps.init({}),
-        tsProject(),
-        gulp.dest('./dist/js'),
-        rename({ suffix: '.min' }),
-        terser(),
-        sourcemaps.write('./', {}),
+        gulpEsbuild({
+            outdir: '.',
+            minify: true,
+            sourcemap: true
+        }),
         gulp.dest('./dist/js'),
         errorHandler,
     );
@@ -69,7 +66,7 @@ export const img = () =>
 export const hbs = () =>
     pipeline(
         gulp.src('./src/**/*.hbs'),
-        exec('node build.mjs', {
+        exec('npm run deno:build', {
             continueOnError: false,
             pipeStdout: false,
         }),
@@ -85,6 +82,6 @@ export const watchHbs = () => gulp.watch(['./src/**/*.hbs', './data/**/*'], hbs)
 
 // All tasks
 export const all = gulp.parallel([css, ts, img, hbs]);
-export const watchAll = gulp.parallel([watchCss, watchTs, watchHbs, all]);
+export const watchAll = gulp.parallel([watchCss, watchTs, watchHbs]);
 
 const errorHandler = (err) => !!err && console.error(err);

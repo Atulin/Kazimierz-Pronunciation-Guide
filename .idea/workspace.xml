@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added Iwona">
-      <change afterPath="$PROJECT_DIR$/deno.jsonc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/multiline-string.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/tsconfig.json" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compiler/build.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compiler/deno.jsonc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/layouts/main.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/partials/footer.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/build.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.toml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/info.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/partials/info.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +45,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/node_modules/handlebars/types/index.d.ts" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,12 +74,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WebstormProjects\Kazimierz\src\pages" />
       <recent name="G:\WebstormProjects\Kazimierz\data" />
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot" />
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot\fonts" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dbuild">
+  <component name="RunManager" selected="npm.build">
     <configuration name="audit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -90,11 +91,31 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dbuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dbuild" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deno:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deno:build" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -114,8 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dbuild" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="npm.deno:build" />
+        <item itemvalue="npm.dbuild" />
         <item itemvalue="npm.audit" />
       </list>
     </recent_temporary>
@@ -253,12 +276,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/build.mjs" />
-        <option value="$PROJECT_DIR$/data/data.d.ts" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
