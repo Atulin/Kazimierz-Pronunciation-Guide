@@ -9,8 +9,8 @@
         <span class="title">Changelog</span>
         {{#each changelog}}
             <div class="entry">
-                <time datetime="{{dateISO this.date}}" title="{{date this.date 'DD MMMM YYYY HH:mm'}}">
-                    {{date this.date 'DD.MM.YYYY'}}
+                <time datetime="{{dateISO this.date}}" title="{{date this.date "dd 'of' MMMM yyyy, HH:mm"}}">
+                    {{date this.date 'dd.MM.yyyy'}}
                 </time>
                 <div>{{{md this.body}}}</div>
             </div>

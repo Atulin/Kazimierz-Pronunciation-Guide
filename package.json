@@ -6,11 +6,11 @@
     "scripts": {
         "dev": "gulp all && concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
         "build": "gulp all",
-        "audit": "lighthouse http://127.0.0.1:8080/ --view",
-        "deno:build": "deno run --allow-read --allow-write --unstable compiler/build.ts"
+        "audit": "lighthouse http://127.0.0.1:8080/ --view"
     },
     "devDependencies": {
         "@mr-hope/gulp-sass": "^3.0.2",
+        "@types/luxon": "^2.3.2",
         "@types/marked": "^4.0.3",
         "@types/node": "^17.0.31",
         "@typescript-eslint/eslint-plugin": "^5.22.0",
@@ -19,6 +19,7 @@
         "concurrently": "7.0.0",
         "csso": "5.0.3",
         "dayjs": "1.11.0",
+        "dedent-js": "^1.0.1",
         "eslint": "^8.14.0",
         "eslint-config-prettier": "^8.5.0",
         "fs-extra": "10.0.1",
@@ -41,6 +42,10 @@
         "prettier": "^2.6.2",
         "sass": "1.49.9",
         "toml": "3.0.0",
+        "ts-dedent": "^2.2.0",
         "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "luxon": "^2.3.2"
     }
 }

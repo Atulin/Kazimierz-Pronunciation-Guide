@@ -5,14 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Move to Deno complete!">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data.types.ts" afterDir="false" />
+      <changelist_data name="Atulin" email="koumarin@gmail.com" date="1651824421000" />
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/partials/search.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/compiler/build.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler/build.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler/deno.jsonc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kazimierz.code-workspace" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/layouts/main.hbs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/partials/info.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/partials/info.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +40,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="package.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -39,6 +55,20 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupnpm">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+    <layout place="tools.popupGulp">
+      <scroll-view-position x="0" y="14" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/gulpfile.mjs" />
+          <id value="watchAll" />
+        </path>
+      </selected-paths>
+    </layout>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,7 +85,8 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "G:/WebstormProjects/chryssishow",
+    "js.buildTools.gulp.gulp_package_dir": "G:/WebstormProjects/Kazimierz/node_modules/gulp",
+    "last_opened_file_path": "G:/WebstormProjects/Kazimierz/gulpfile.mjs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -63,6 +94,7 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "G:\\WebstormProjects\\Kazimierz\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
@@ -70,13 +102,34 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WebstormProjects\Kazimierz" />
+      <recent name="G:\WebstormProjects\Kazimierz\compiler" />
       <recent name="G:\WebstormProjects\Kazimierz\src\pages" />
       <recent name="G:\WebstormProjects\Kazimierz\data" />
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot" />
-      <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot\fonts" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="npm.audit">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="watchAll" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.mjs</gulpfile>
+      <tasks>
+        <task>watchAll</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="audit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -92,16 +145,6 @@
       <command value="run" />
       <scripts>
         <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="dbuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dbuild" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -131,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.audit" />
+        <item itemvalue="Gulp.js.watchAll" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.deno:build" />
-        <item itemvalue="npm.dbuild" />
-        <item itemvalue="npm.audit" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +211,7 @@
       <workItem from="1651195027675" duration="1571000" />
       <workItem from="1651816183862" duration="24000" />
       <workItem from="1651816223373" duration="1628000" />
+      <workItem from="1651851982582" duration="5623000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
