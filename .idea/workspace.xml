@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too.">
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added Iwona">
+      <change afterPath="$PROJECT_DIR$/deno.jsonc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/multiline-string.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/build.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data.toml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +68,33 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;G:\\WebstormProjects\\Kazimierz\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\WebstormProjects\Kazimierz\data" />
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot" />
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot\fonts" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.dbuild">
     <configuration name="audit" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="audit" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dbuild" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dbuild" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -93,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dbuild" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.audit" />
       </list>
@@ -124,7 +146,9 @@
       <workItem from="1649859281064" duration="17000" />
       <workItem from="1650390495704" duration="47000" />
       <workItem from="1651194843876" duration="127000" />
-      <workItem from="1651195027675" duration="313000" />
+      <workItem from="1651195027675" duration="1571000" />
+      <workItem from="1651816183862" duration="24000" />
+      <workItem from="1651816223373" duration="1628000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -217,11 +241,24 @@
       <option name="project" value="LOCAL" />
       <updated>1649753476699</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added Iwona">
+      <created>1651195471706</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1651195471706</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/build.mjs" />
+        <option value="$PROJECT_DIR$/data/data.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -249,6 +286,7 @@
     <MESSAGE value="Added word definitions" />
     <MESSAGE value="Added &quot;Greynuty&quot;, added some Wikipedia links, added Ko-Fi button, fixed #3" />
     <MESSAGE value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
+    <MESSAGE value="Added Iwona" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Iwona" />
   </component>
 </project>
