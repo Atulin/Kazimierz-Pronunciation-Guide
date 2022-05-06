@@ -1,0 +1,43 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+$fg: #efefef;
+$bg: #151015;
+:root {
+    --fg: #{$fg};
+    --fg-75: #{mix($fg, $bg, 75%)};
+    --fg-50: #{mix($fg, $bg, 50%)};
+    --fg-25: #{mix($fg, $bg, 25%)};
+    --fg-10: #{mix($fg, $bg, 10%)};
+    --bg: #{$bg};
+    --body-bg: #{lighten($bg, 10%)};
+}
+
+a {
+    text-decoration: none;
+    color: saturate($fg, 50%);
+    &:hover {
+        color: var(--fg-75);
+    }
+    &:focus {
+        outline: 2px dotted var(--fg-50);
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-bg);
+    color: var(--fg);
+    font-family: 'Raleway Var', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

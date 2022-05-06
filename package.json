@@ -1,39 +1,28 @@
 {
-    "name": "kazimierz",
-    "version": "2.0.0",
-    "author": "Atulin",
+    "name": "kazimierz-pronunciation-guide",
+    "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "concurrently --kill-others \"npx gulp watchAll\" \"npx live-server dist\"",
-        "build": "gulp all",
-        "audit": "lighthouse http://127.0.0.1:8080/ --view"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.1.6",
+        "react": "18.1.0",
+        "react-dom": "18.1.0"
     },
     "devDependencies": {
-        "@mr-hope/gulp-sass": "^3.0.2",
-        "@types/marked": "^4.0.3",
-        "@types/node": "^17.0.23",
-        "autoprefixer": "10.4.4",
-        "concurrently": "7.0.0",
-        "csso": "5.0.3",
-        "dayjs": "1.11.0",
-        "fs-extra": "10.0.1",
-        "gulp": "4.0.2",
-        "gulp-exec": "5.0.0",
-        "gulp-postcss": "9.0.1",
-        "gulp-rename": "2.0.0",
-        "gulp-sass": "5.1.0",
-        "gulp-sourcemaps": "3.0.0",
-        "gulp-terser": "2.1.0",
-        "gulp-typescript": "6.0.0-alpha.1",
-        "gulp-webp": "4.0.1",
-        "handlebars": "4.7.7",
-        "lighthouse": "^9.5.0",
-        "live-server": "1.2.1",
-        "marked": "^4.0.13",
-        "postcss": "8.4.12",
-        "postcss-csso": "6.0.0",
-        "sass": "1.49.9",
-        "toml": "3.0.0",
-        "typescript": "4.6.2"
+        "sass": "^1.51.0",
+        "@types/node": "17.0.31",
+        "@types/react": "18.0.8",
+        "@types/react-dom": "18.0.3",
+        "@typescript-eslint/eslint-plugin": "^5.22.0",
+        "eslint": "8.14.0",
+        "eslint-config-next": "12.1.6",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.6.2",
+        "typescript": "4.6.4"
     }
 }
