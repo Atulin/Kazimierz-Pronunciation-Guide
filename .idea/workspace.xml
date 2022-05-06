@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compiler/build.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compiler/deno.jsonc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/layouts/main.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/partials/footer.hbs" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Move to Deno complete!">
+      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compiler/build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/compiler/build.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/info.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/partials/info.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,21 +51,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/WebstormProjects/chryssishow&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "G:/WebstormProjects/chryssishow",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\WebstormProjects\Kazimierz\src\pages" />
@@ -271,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651195471706</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Move to Deno complete!">
+      <created>1651841210674</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651841210674</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,6 +307,11 @@
     <MESSAGE value="Added &quot;Greynuty&quot;, added some Wikipedia links, added Ko-Fi button, fixed #3" />
     <MESSAGE value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
     <MESSAGE value="Added Iwona" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Iwona" />
+    <MESSAGE value="Move to Deno complete!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move to Deno complete!" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

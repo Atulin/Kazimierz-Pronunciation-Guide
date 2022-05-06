@@ -2,7 +2,6 @@ import { copy } from "https://deno.land/std@0.138.0/fs/copy.ts";
 import { resolve, fromFileUrl, dirname } from "https://deno.land/std@0.138.0/path/mod.ts";
 import { Handlebars, HandlebarsConfig } from 'https://deno.land/x/handlebars/mod.ts';
 import { ensureDir, ensureFile } from 'https://deno.land/std@0.138.0/fs/mod.ts';
-import { format as dateFormat } from "https://deno.land/std@0.138.0/datetime/mod.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import { datetime } from "https://deno.land/x/ptera/mod.ts";
 
@@ -28,7 +27,7 @@ const hbsConfig: HandlebarsConfig = {
 	defaultLayout: 'main',
 	cachePartials: true,
 	helpers: {
-		date: (date: Date, format: string = 'dd.MM.yyyy HH:mm'): string => datetime(date).format(format),
+		date: (date: Date, format = 'dd.MM.yyyy HH:mm'): string => datetime(date).format(format),
 		dateISO: (date: Date): string => datetime(date).toISO(),
 		year: (): number => datetime().year,
 		toLower: (str: string): string => str.toLowerCase(),
@@ -40,7 +39,7 @@ const hbsConfig: HandlebarsConfig = {
 };
 const hbs = new Handlebars(hbsConfig);
 ci('┃│└ Done');
-const index = await hbs.renderView('index', data);
+const index = await hbs.renderView('index', data as unknown as Record<string, unknown>);
 ci('┃├ Rendered');
 await ensureFile(p('../dist/index.html'));
 await Deno.writeTextFile(p('../dist/index.html'), index);
