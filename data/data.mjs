@@ -138,6 +138,20 @@ const data = {
         The *y* sound is uncommon in English, the best example I could find was the *e* in [parallelepiped](https://en.wiktionary.org/wiki/parallelepiped).`,
 		},
 		{
+			word: 'Józef',
+			sound: 'Ioo-zef',
+			type: 'character',
+			definition: "Male name, *Joseph*"
+		},
+		{
+			word: 'Nightzmora',
+			sound: 'Night-zmoh-ra',
+			type: 'other',
+			definition: ms`
+			A combination of English *night* and Polish *zmora*. The latter being a Slavic sleep paralysis demon.
+			[Wikipedia](https://en.wikipedia.org/wiki/Mare_(folklore))`,
+		},
+		{
 			word: 'Ułan',
 			sound: 'Uh–wan',
 			type: 'other',
@@ -157,6 +171,12 @@ const data = {
 			type: 'other',
 			definition: '*Kurdę* is to *kurwa* what *fudge* is to *fuck*',
 		},
+		{
+			word: 'Spadaj',
+			sound: 'Spa-dai',
+			type: 'other',
+			definition: '*Piss off*'
+		}
 	],
 	changelog: [
 		{
@@ -189,6 +209,10 @@ const data = {
 		{
 			date: '2022-05-12T09:33:50.724Z',
 			body: 'Added *kurde*'
+		},
+		{
+			date: '2022-05-12T10:17:11.158Z',
+			body: 'Added *spadaj*, *Nightzmora*, *Józef*'
 		}
 	],
 };
