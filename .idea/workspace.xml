@@ -4,31 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Move to Deno complete!">
-      <changelist_data name="Atulin" email="koumarin@gmail.com" date="1651824421000" />
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/partials/search.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Cleanup, fixed the build (again), went back to plain ol' Javascript after all">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/build.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/compiler/deno.jsonc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kazimierz.code-workspace" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/layouts/main.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/partials/info.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/partials/info.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +73,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "prettierjs.PrettierConfiguration.Package": "G:\\WebstormProjects\\Kazimierz\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "editing.templates",
     "ts.external.directory.path": "G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -211,7 +189,8 @@
       <workItem from="1651195027675" duration="1571000" />
       <workItem from="1651816183862" duration="24000" />
       <workItem from="1651816223373" duration="1628000" />
-      <workItem from="1651851982582" duration="5623000" />
+      <workItem from="1651851982582" duration="5691000" />
+      <workItem from="1652338574826" duration="759000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -318,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651841210674</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Cleanup, fixed the build (again), went back to plain ol' Javascript after all">
+      <created>1651857723415</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651857723415</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +338,8 @@
     <MESSAGE value="Added &quot;Liść&quot; and improved the build process with partials. Fixed some CSS stuff too." />
     <MESSAGE value="Added Iwona" />
     <MESSAGE value="Move to Deno complete!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Move to Deno complete!" />
+    <MESSAGE value="Cleanup, fixed the build (again), went back to plain ol' Javascript after all" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup, fixed the build (again), went back to plain ol' Javascript after all" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
