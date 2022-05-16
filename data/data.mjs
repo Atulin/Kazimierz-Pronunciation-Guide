@@ -26,6 +26,12 @@ const data = {
 				'Not actually a Polish word, only Polish-sounding. The root seems to be *kawaleria* (cavalry), and the *-elki* ending suggests a plural diminutive form.',
 		},
 		{
+			word: 'Ognisko',
+			sound: 'Oh-gnee-skoh',
+			type: 'place',
+			definition: 'Campfire'
+		},
+		{
 			word: 'Sprawiedliwi',
 			sound: 'Sprah-vye-dlee-vee',
 			type: 'group',
@@ -213,6 +219,10 @@ const data = {
 		{
 			date: '2022-05-12T10:17:11.158Z',
 			body: 'Added *spadaj*, *Nightzmora*, *Józef*'
+		},
+		{
+			date: '2022-05-16T07:50:08.627Z',
+			body: 'Added *Ognisko*'
 		}
 	],
 };
