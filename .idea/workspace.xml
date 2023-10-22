@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;spadaj&quot;, &quot;Nightzmora&quot;, &quot;Józef&quot;" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added">
+      <change afterPath="$PROJECT_DIR$/src/js/copy.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +54,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="27BSyNPW9CJ9LlnFSnwiIEKcWPS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,25 +65,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;js.buildTools.gulp.gulp_package_dir&quot;: &quot;G:/WebstormProjects/Kazimierz/node_modules/gulp&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/WebstormProjects/Kazimierz/gulpfile.mjs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;G:\\WebstormProjects\\Kazimierz\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;G:\\JetBrains\\apps\\WebStorm\\ch-0\\221.5080.193\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gulp.js.watchAll.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "js.buildTools.gulp.gulp_package_dir": "G:/WebstormProjects/Kazimierz/node_modules/gulp",
+    "last_opened_file_path": "G:/WebstormProjects/Kazimierz/gulpfile.mjs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "npm.dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "G:\\WebstormProjects\\Kazimierz\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "G:\\WebstormProjects\\Kazimierz\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\WebstormProjects\Kazimierz" />
@@ -84,7 +96,7 @@
       <recent name="G:\WebstormProjects\Kazimierz\src\wwwroot" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.audit">
+  <component name="RunManager" selected="npm.dev">
     <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -149,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.audit" />
-        <item itemvalue="Gulp.js.watchAll" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.deno:build" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.audit" />
+        <item itemvalue="Gulp.js.watchAll" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +200,8 @@
       <workItem from="1651816223373" duration="1628000" />
       <workItem from="1651851982582" duration="5691000" />
       <workItem from="1652338574826" duration="4353000" />
+      <workItem from="1652679920678" duration="337000" />
+      <workItem from="1697982547487" duration="1540000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -315,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652357730341</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added">
+      <created>1652680243137</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1652680243137</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +373,8 @@
     <MESSAGE value="Cleanup, fixed the build (again), went back to plain ol' Javascript after all" />
     <MESSAGE value="Added &quot;kurde&quot;" />
     <MESSAGE value="Added &quot;spadaj&quot;, &quot;Nightzmora&quot;, &quot;Józef&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;spadaj&quot;, &quot;Nightzmora&quot;, &quot;Józef&quot;" />
+    <MESSAGE value="Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -65,7 +65,7 @@ body {
 
 main {
 	min-height: 100vh;
-	max-width: 650px;
+	max-width: 750px;
 	background-color: var(--bg);
 	display: flex;
 	flex-direction: column;
@@ -127,6 +127,20 @@ main {
 
 				&:hover {
 					background-color: var(--fg-10);
+				}
+			}
+
+			&:target {
+				outline: 5px solid var(--hl-5);
+				animation: fadeOut 2s 2s forwards;
+
+				@keyframes fadeOut {
+					0% {
+						outline-color: var(--hl-5);
+					}
+					100% {
+						outline-color: transparent;
+					}
 				}
 			}
 

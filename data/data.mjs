@@ -182,9 +182,16 @@ const data = {
 			sound: 'Spa-dai',
 			type: 'other',
 			definition: '*Piss off*'
+		},
+		{
+			word: 'W dali',
+			sound: 'V dah-li',
+			type: 'other',
+			definition: 'In the distance, far away'
 		}
 	],
 	changelog: [
+		// Use !!curdate to insert current date
 		{
 			date: '2022-04-08T09:11:22.532Z',
 			body: 'Recorded some voiceover to make it easier to figure out how to spell the words',
@@ -223,6 +230,10 @@ const data = {
 		{
 			date: '2022-05-16T07:50:08.627Z',
 			body: 'Added *Ognisko*'
+		},
+		{
+			date: '2023-10-22T15:52:14.390Z',
+			body: 'Added *w dali*'
 		}
 	],
 };
