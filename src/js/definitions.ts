@@ -1,13 +1,15 @@
 (() => {
-	document
-		.querySelectorAll('button[data-definition]')
-		.forEach((el) =>
-			el.addEventListener('click', (e: MouseEvent) => showDefinition(e))
-		);
+	const definitionButtons = document.querySelectorAll(
+		"button[data-definition]",
+	);
 
-	const dialog = document.getElementById('definition') as HTMLDialogElement;
+	for (const btn of definitionButtons) {
+		btn.addEventListener("click", (e: MouseEvent) => showDefinition(e));
+	}
 
-	dialog.addEventListener('click', (e) => {
+	const dialog = document.getElementById("definition") as HTMLDialogElement;
+
+	dialog.addEventListener("click", (e) => {
 		const target = e.target as HTMLDialogElement;
 		if (
 			e.offsetX < 0 ||
@@ -19,17 +21,15 @@
 	});
 
 	dialog
-		.querySelector('button#close')
-		.addEventListener('click', () => dialog.close());
+		.querySelector("button#close")
+		.addEventListener("click", () => dialog.close());
 
 	const showDefinition = (e: Event) => {
-		const p = dialog.querySelector('p.definition') as HTMLParagraphElement;
-		p.innerHTML = (e.currentTarget as HTMLButtonElement).dataset[
-			'definition'
-		];
+		const p = dialog.querySelector("p.definition") as HTMLParagraphElement;
+		p.innerHTML = (e.currentTarget as HTMLButtonElement).dataset.definition;
 
-		const s = dialog.querySelector('span.title') as HTMLSpanElement;
-		s.innerText = (e.currentTarget as HTMLButtonElement).dataset['word'];
+		const s = dialog.querySelector("span.title") as HTMLSpanElement;
+		s.innerText = (e.currentTarget as HTMLButtonElement).dataset.word;
 
 		dialog.showModal();
 	};

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added">
-      <change afterPath="$PROJECT_DIR$/src/js/copy.ts" afterDir="false" />
+    <list default="true" id="6c18ed2f-da78-48a7-b166-f14d796d8f04" name="Changes" comment="Added &quot;W dali&quot;&#10;Added IDs for words so they can be linked to&#10;Widened the layout a little bit to prevent word wrapping">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +50,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="27BSyNPW9CJ9LlnFSnwiIEKcWPS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,6 +64,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gulp.js.watchAll.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
@@ -201,7 +198,8 @@
       <workItem from="1651851982582" duration="5691000" />
       <workItem from="1652338574826" duration="4353000" />
       <workItem from="1652679920678" duration="337000" />
-      <workItem from="1697982547487" duration="1540000" />
+      <workItem from="1697982547487" duration="1716000" />
+      <workItem from="1700388708324" duration="603000" />
     </task>
     <task id="LOCAL-00001" summary="Homemade solutions are the best after all">
       <created>1648793652219</created>
@@ -336,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1652680243137</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added &quot;W dali&quot;&#10;Added IDs for words so they can be linked to&#10;Widened the layout a little bit to prevent word wrapping">
+      <option name="closed" value="true" />
+      <created>1697984207982</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1697984207982</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,7 +380,8 @@
     <MESSAGE value="Added &quot;kurde&quot;" />
     <MESSAGE value="Added &quot;spadaj&quot;, &quot;Nightzmora&quot;, &quot;Józef&quot;" />
     <MESSAGE value="Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added" />
+    <MESSAGE value="Added &quot;W dali&quot;&#10;Added IDs for words so they can be linked to&#10;Widened the layout a little bit to prevent word wrapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added &quot;W dali&quot;&#10;Added IDs for words so they can be linked to&#10;Widened the layout a little bit to prevent word wrapping" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
