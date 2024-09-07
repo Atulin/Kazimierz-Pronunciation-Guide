@@ -6,10 +6,12 @@
 		  content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="{{desc}}">
-	<link rel="stylesheet" href="{{ bust '/css/style.min.css' }}">
+	<link rel="stylesheet" href="{{ bust '/css/style.css' }}">
 	<title>{{title}}</title>
 </head>
 <body>
+
+	{{>svg-definitions}}
 
 <main>
 
@@ -25,76 +27,11 @@
 			<th>Word</th>
 			<th>Pronunciation</th>
 		</tr>
+		
 		{{#each words}}
-			<tr
-				id='{{normalize this.word}}'
-				class='{{this.type}}'
-				data-word='{{this.word}}'
-				data-type='{{this.type}}'
-			>
-				<td class='cat'>{{this.type}}</td>
-				<td class='word'>{{this.word}}</td>
-				<td class='sound'>{{this.sound}}</td>
-				<td class='buttons'>
-					<button
-						class='button link'
-						data-id='{{normalize this.word}}'
-						aria-label='Copy link to {{this.word}}'
-						title='Copy link to {{this.word}}'
-					>
-						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width='2'
-								  d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
-						</svg>
 
-					</button>
-					<button
-						class='button definition'
-						data-definition='{{md this.definition}}'
-						data-word='{{this.word}}'
-						aria-label='Show definition of {{this.word}}'
-						title='Show definition of {{this.word}}'
-					>
-						<svg
-							fill='none'
-							viewBox='0 0 24 24'
-							xmlns='http://www.w3.org/2000/svg'
-						>
-							<path d='M12 14l9-5-9-5-9 5 9 5z'></path>
-							<path
-								d='M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z'
-							></path>
-							<path
-								stroke-linecap='round'
-								stroke-linejoin='round'
-								stroke-width='2'
-								d='M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222'
-							></path>
-						</svg>
-					</button>
-					{{#unless this.no-sound}}
-						<button
-							class='button voice'
-							data-voice='{{normalize this.word}}'
-							aria-label='Play pronunciation of {{this.word}}'
-							title='Play pronunciation of {{this.word}}'
-						>
-							<svg
-								fill='none'
-								viewBox='0 0 24 24'
-								xmlns='http://www.w3.org/2000/svg'
-							>
-								<path
-									stroke-linecap='round'
-									stroke-linejoin='round'
-									stroke-width='2'
-									d='M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z'
-								></path>
-							</svg>
-						</button>
-					{{/unless}}
-				</td>
-			</tr>
+			{{>word this}}
+			
 		{{/each}}
 	</table>
 	{{>footer}}
