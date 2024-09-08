@@ -3,7 +3,13 @@
 	<td class='word'>{{this.word}}</td>
 	<td class='sound'>{{this.sound}}</td>
 	<td class='buttons'>
-		<button class='button link' data-id='{{normalize this.word}}' aria-label='Copy link to {{this.word}}' title='Copy link to {{this.word}}'>
+		<button
+			class='button link'
+			data-id='{{normalize this.word}}'
+			data-action='Link'
+			aria-label='Copy link to {{this.word}}'
+			title='Copy link to {{this.word}}'
+		>
 			<svg width='24' height='24'>
 				<use href='#svg-link' />
 			</svg>
@@ -13,6 +19,7 @@
 			class='button definition'
 			data-definition='{{~compress (md this.definition)~}}'
 			data-word='{{this.word}}'
+			data-action='Definition'
 			aria-label='Show definition of {{this.word}}'
 			title='Show definition of {{this.word}}'
 		>
@@ -24,6 +31,7 @@
 			<button
 				class='button voice'
 				data-voice='{{normalize this.word}}'
+				data-action='Sound'
 				aria-label='Play pronunciation of {{this.word}}'
 				title='Play pronunciation of {{this.word}}'
 			>

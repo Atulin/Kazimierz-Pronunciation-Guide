@@ -19,8 +19,6 @@
 		"autoprefixer": "^10.4.20",
 		"concurrently": "^8.2.2",
 		"csso": "^5.0.5",
-		"dayjs": "1.11.0",
-		"dedent-js": "^1.0.1",
 		"es-toolkit": "^1.17.0",
 		"eslint": "^9.10.0",
 		"eslint-config-prettier": "^9.1.0",

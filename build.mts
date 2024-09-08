@@ -14,39 +14,41 @@ import crypto from "node:crypto";
 import { marked } from "marked";
 import { Glob } from "bun";
 import { type AllData, allDataSchema } from "./data/schema";
+import { Timer } from "./timer.mjs";
 
 const ci = console.info;
+const timer = new Timer();
 
 ci("Build started");
 
 // Move root files
-ci("┠┬ Moving wwwroot files...");
+ci("┠─┬─ Moving wwwroot files...");
 await fse.copy("./src/wwwroot/", "./dist/", {});
-ci("┃└ Done");
+ci(`┃ └─ Done in ${timer.lap().toFixed(2)} ms`);
 
 // Create index file
-ci("┠┬ Generating index.html...");
-ci("┃├┬ Registering helpers");
+ci("┠─┬─ Generating index.html...");
+ci("┃ ├─┬─ Registering helpers");
 registerHelpers();
-ci("┃│└ Registered");
-ci("┃├┬ Registering partials");
+ci(`┃ │ └─ Registered in ${timer.lap().toFixed(2)} ms`);
+ci("┃ ├─┬─ Registering partials");
 await registerPartials();
-ci("┃│└ Registered");
-ci("┃├┬ Parsing data");
+ci(`┃ │ └─ Registered in ${timer.lap().toFixed(2)} ms`);
+ci("┃ ├─┬─ Parsing data");
 const data = await getData();
-ci("┃│└ Parsed");
-ci("┃├┬ Rendering templates");
+ci(`┃ │ └─ Parsed in ${timer.lap().toFixed(2)} ms`);
+ci("┃ └─┬─ Rendering templates");
 const index = await render("./src/pages/index.hbs", data);
-ci("┃├— Rendered");
+ci(`┃   ├─ Rendered in ${timer.lap().toFixed(2)} ms`);
 await Bun.write("./dist/index.html", index);
-ci("┃└— Saved");
-ci("┠┬ Compiling Typescript");
+ci("┃   └─ Saved");
+ci("┠─┬─ Compiling Typescript");
 await compileTypescript();
-ci("┃└ Compiled");
-ci("┠┬ Compiling SASS");
+ci(`┃ └─ Compiled in ${timer.lap().toFixed(2)} ms`);
+ci("┠─┬─ Compiling SASS");
 await compileSass();
-ci("┃└ Compiled");
-ci("┗━ All done!");
+ci(`┃ └─ Compiled in ${timer.lap().toFixed(2)} ms`);
+ci(`┗━━ All done in ${timer.total().toFixed(2)} ms!`);
 
 function registerHelpers() {
 	const hbsHelpers = {

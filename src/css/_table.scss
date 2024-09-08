@@ -6,8 +6,12 @@ table {
 	tr {
 		border-bottom: 1px solid var(--fg-50);
 		@media screen and (max-width: 600px) {
-			display: flex;
-			flex-direction: column;
+			display: grid;
+			grid:
+				'category actions' 1fr
+				'word actions' 1fr
+				'sound actions' 1fr
+				/ 1fr auto;
 			&:first-child {
 				display: none;
 			}
@@ -63,23 +67,36 @@ table {
 			padding: 0.5rem 1rem;
 			vertical-align: middle;
 
+			@media screen and (max-width: 600px) {
+				padding: 0.5rem 0.25rem;
+			}
+
 			&.cat {
 				color: var(--fg-75);
 				font-weight: 300;
+				grid-area: category;
 			}
 
 			&.word {
 				letter-spacing: 0.1rem;
+				grid-area: word;
 			}
 
 			&.sound {
 				letter-spacing: 0.2rem;
+				grid-area: sound;
 			}
 
 			&.buttons {
 				display: flex;
 				align-items: center;
+				justify-content: center;
 				gap: 0.5rem;
+				grid-area: actions;
+
+				@media screen and (max-width: 600px) {
+					flex-direction: column;
+				}
 
 				.button {
 					height: 24px;
