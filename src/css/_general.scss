@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+$fg: #efefef;
+$bg: #151015;
+$hl: rgb(255, 255, 0);
+:root {
+	--fg: #{$fg};
+	--fg-75: #{mix($fg, $bg, 75%)};
+	--fg-50: #{mix($fg, $bg, 50%)};
+	--fg-25: #{mix($fg, $bg, 25%)};
+	--fg-10: #{mix($fg, $bg, 10%)};
+	--fg-t-10: #{rgba($fg, 0.1)};
+	--fg-sat: #{saturate($fg, 50%)};
+
+	--bg: #{$bg};
+	--body-bg: #{lighten($bg, 10%)};
+
+	--hl: #{$hl};
+	--hl-5: #{rgba($hl, 0.5)};
+	--hl-10: #{rgba($hl, 0.1)};
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--body-bg);
+	color: var(--fg);
+	font-family: 'Raleway Var', sans-serif;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	scrollbar-gutter: stable both-edges;
+}
+
+main {
+	min-height: 100vh;
+	max-width: 750px;
+	background-color: var(--bg);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: min(2rem, 3vw);
+	margin: auto;
+
+	#description {
+		line-height: 1.2rem;
+	}
+}
+
+footer {
+	align-self: center;
+	justify-self: end;
+}

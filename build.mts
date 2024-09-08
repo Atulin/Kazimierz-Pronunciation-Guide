@@ -116,10 +116,9 @@ async function compileTypescript() {
 }
 
 async function compileSass() {
-	const files = new Glob("./src/css/**/*.{sass,scss}").scan();
+	const files = new Glob("./src/css/*.scss").scan();
 	for await (const file of files) {
-		const content = await Bun.file(file).text();
-		const sassResult = sass.compileString(content);
+		const sassResult = sass.compile(file);
 		const css = await postcss([autoprefixer, csso]).process(sassResult.css, {
 			from: file,
 		});

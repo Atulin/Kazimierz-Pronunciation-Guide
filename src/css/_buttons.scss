@@ -1,0 +1,13 @@
+button {
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+
+	&#info-button {
+		width: 3rem;
+		height: 3rem;
+		position: fixed;
+		top: min(1rem, 1vw);
+		right: min(1rem, 1vw);
+	}
+}

@@ -4,7 +4,7 @@
 	"author": "Atulin",
 	"private": true,
 	"scripts": {
-		"dev": "concurrently \"bun build.mts\" \"npx live-server dist\"",
+		"dev": "bun build.mts && npx live-server dist",
 		"build": "bun build.mts",
 		"audit": "lighthouse http://127.0.0.1:8080/ --view"
 	},

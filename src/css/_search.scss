@@ -1,0 +1,32 @@
+.search {
+	width: min(100%, 400px);
+	display: flex;
+	background-color: var(--fg-10);
+	border: 1px solid var(--fg-50);
+	align-items: center;
+
+	&:hover {
+		background-color: var(--fg-25);
+	}
+
+	svg {
+		height: 24px;
+		width: 24px;
+		margin: auto 0.25rem;
+	}
+
+	label {
+		opacity: 0;
+		height: 0;
+		width: 0;
+	}
+
+	#search {
+		color: var(--fg);
+		background-color: transparent;
+		border: none;
+		padding: 0.5rem;
+		width: 100%;
+		font-size: 1.1rem;
+	}
+}

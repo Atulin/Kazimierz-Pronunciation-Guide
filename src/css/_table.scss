@@ -1,0 +1,106 @@
+table {
+	flex: 1;
+	border-collapse: collapse;
+	width: 100%;
+
+	tr {
+		border-bottom: 1px solid var(--fg-50);
+		@media screen and (max-width: 600px) {
+			display: flex;
+			flex-direction: column;
+			&:first-child {
+				display: none;
+			}
+		}
+
+		&:not(:first-child) {
+			transition: background-color 100ms ease-in-out;
+
+			&:hover {
+				background-color: var(--fg-10);
+			}
+		}
+
+		&:target {
+			outline: 5px solid var(--hl-5);
+			animation: fadeOut 2s 2s forwards;
+
+			@keyframes fadeOut {
+				0% {
+					outline-color: var(--hl-5);
+				}
+				100% {
+					outline-color: transparent;
+				}
+			}
+		}
+
+		&.hidden {
+			visibility: collapse;
+		}
+
+		&.found-type {
+			td.cat {
+				outline: 1px solid var(--hl-5);
+				outline-offset: -3px;
+				background-color: var(--hl-10);
+			}
+		}
+
+		&.found-word {
+			td.word {
+				outline: 1px solid var(--hl-5);
+				outline-offset: -3px;
+				background-color: var(--hl-10);
+			}
+		}
+
+		th {
+			padding: 0.5rem 1rem;
+		}
+
+		td {
+			padding: 0.5rem 1rem;
+			vertical-align: middle;
+
+			&.cat {
+				color: var(--fg-75);
+				font-weight: 300;
+			}
+
+			&.word {
+				letter-spacing: 0.1rem;
+			}
+
+			&.sound {
+				letter-spacing: 0.2rem;
+			}
+
+			&.buttons {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+
+				.button {
+					height: 24px;
+
+					&:focus {
+						outline: 2px dotted var(--fg-50);
+					}
+
+					&:hover {
+						svg {
+							stroke: var(--fg);
+						}
+					}
+
+					svg {
+						height: 100%;
+						stroke: var(--fg-50);
+						transition: stroke 100ms ease-in-out;
+					}
+				}
+			}
+		}
+	}
+}
