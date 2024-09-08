@@ -5,9 +5,9 @@
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="{{desc}}">
+	<meta name="description" content="{{data.desc}}">
 	<link rel="stylesheet" href="{{ bust '/css/style.css' }}">
-	<title>{{title}}</title>
+	<title>{{data.title}}</title>
 </head>
 <body>
 
@@ -15,9 +15,9 @@
 
 <main>
 
-	<h1>{{title}}</h1>
+	<h1>{{data.title}}</h1>
 
-	<div id='description'>{{desc}}</div>
+	<div id='description'>{{data.desc}}</div>
 
 	{{>search}}
 
@@ -59,6 +59,8 @@
 {{>info}}
 
 
+<script src="{{ bust '/js/search.js' }}" async></script>
+<script src="{{ bust '/js/info.js' }}" async></script>
 <script src="{{ bust '/js/voice.js' }}" async></script>
 <script src="{{ bust '/js/definitions.js' }}" async></script>
 <script src='{{ bust '/js/copy.js' }}' async></script>

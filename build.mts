@@ -2,6 +2,7 @@ import fse from "fs-extra";
 import Handlebars from "handlebars";
 import path from "node:path";
 import yaml from "yaml";
+import { compressToUTF16 } from "lz-string";
 
 import * as sass from "sass";
 import postcss from "postcss";
@@ -62,7 +63,12 @@ function registerHelpers() {
 
 		normalize: (str: string) => str.toLowerCase().replace(/\s+/, "_"),
 
-		md: (str: string) => marked.parse(str.trim()),
+		md: (str: string) => marked.parse(str.trim(), { async: false }),
+
+		mdCompressed: (str: string) =>
+			compressToUTF16(marked.parse(str.trim(), { async: false })),
+
+		compress: (str: string) => compressToUTF16(str),
 	};
 
 	for (const [key, value] of Object.entries(hbsHelpers)) {
